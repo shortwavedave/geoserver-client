@@ -6,8 +6,9 @@
     "generators": { 
       "v2.0": { 
         "generatorName": "typescript-axios",
-        "output": "#{cwd}/geoserver/v2.0/#{name}",
+        "output": "#{cwd}/geoserver/#{name}",
         "glob": "../1.0.0/*.{json,yaml}",
+        "skipValidateSpec": true,
         "additionalProperties": {
           "npmName": "geoserver-client",
           "supportsES6": "true",
