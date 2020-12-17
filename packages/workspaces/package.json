@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-workspaces",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenAPI client for geoserver-client-workspaces",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

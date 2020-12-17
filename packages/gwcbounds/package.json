@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-gwcbounds",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenAPI client for geoserver-client-gwcbounds",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

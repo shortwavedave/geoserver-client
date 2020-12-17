@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-fonts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenAPI client for geoserver-client-fonts",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

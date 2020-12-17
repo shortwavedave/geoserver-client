@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-gwcblobstores",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenAPI client for geoserver-client-gwcblobstores",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
