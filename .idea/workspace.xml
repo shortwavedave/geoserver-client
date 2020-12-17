@@ -3,16 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="7b6e4137-203d-4c5c-b56f-ca05dd7a6282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/coverages/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/coverages/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/coverages/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/coverages/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/coverages/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/packages/coverages/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/coveragestores/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/coveragestores/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/coveragestores/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/packages/coveragestores/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/datastores/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/datastores/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/featuretypes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/featuretypes/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/fonts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fonts/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/geoserver-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/__tests__/geoserver-client.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/src/geoserver-client.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/src/geoserver-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/src/geoserver-client.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/src/geoserver-client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/url.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/geoserver-client/yarn-error.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/gwcblobstores/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gwcblobstores/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/gwcbounds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gwcbounds/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/gwcdiskquota/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gwcdiskquota/package.json" afterDir="false" />
@@ -27,10 +32,7 @@
       <change beforePath="$PROJECT_DIR$/packages/gwcseed/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/gwcseed/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/importer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/importer/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/importerData/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/importerData/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/importerTasks/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/importerTasks/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/importerTransforms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/importerTransforms/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/layergroups/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/layergroups/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/layers/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/layers/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/layers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/layers/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/manifests/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/manifests/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/metadata/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/metadata/package.json" afterDir="false" />
@@ -44,7 +46,6 @@
       <change beforePath="$PROJECT_DIR$/packages/roles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/roles/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/security/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/security/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/settings/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/settings/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/structuredcoverages/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/structuredcoverages/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/structuredcoverages/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/structuredcoverages/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/styles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/styles/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/system-status/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/system-status/package.json" afterDir="false" />
@@ -56,7 +57,6 @@
       <change beforePath="$PROJECT_DIR$/packages/wmtslayers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/wmtslayers/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/wmtsstores/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/wmtsstores/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/workspaces/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/workspaces/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608183057623</updated>
       <workItem from="1608183058710" duration="710000" />
-      <workItem from="1608232085052" duration="1230000" />
+      <workItem from="1608232085052" duration="2703000" />
     </task>
     <servers />
   </component>
