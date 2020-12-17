@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-coveragestores",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenAPI client for geoserver-client-coveragestores",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-monitoring",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenAPI client for geoserver-client-monitoring",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

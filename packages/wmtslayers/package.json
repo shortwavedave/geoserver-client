@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-wmtslayers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenAPI client for geoserver-client-wmtslayers",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
