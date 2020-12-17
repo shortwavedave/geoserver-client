@@ -20,7 +20,7 @@ import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
 import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from './base';
 
 /**
- * 
+ *
  * @export
  * @interface CoverageInfo
  */
@@ -38,7 +38,7 @@ export interface CoverageInfo {
      */
     nativeName?: string;
     /**
-     * 
+     *
      * @type {CoverageInfoNamespace}
      * @memberof CoverageInfo
      */
@@ -62,19 +62,19 @@ export interface CoverageInfo {
      */
     defaultInterpolationMethod?: string;
     /**
-     * 
+     *
      * @type {CoverageInfoKeywords}
      * @memberof CoverageInfo
      */
     keywords?: CoverageInfoKeywords;
     /**
-     * 
+     *
      * @type {CoverageInfoMetadatalinks}
      * @memberof CoverageInfo
      */
     metadatalinks?: CoverageInfoMetadatalinks;
     /**
-     * 
+     *
      * @type {CoverageInfoDataLinks}
      * @memberof CoverageInfo
      */
@@ -92,13 +92,13 @@ export interface CoverageInfo {
      */
     srs?: string;
     /**
-     * 
+     *
      * @type {CoverageInfoNativeBoundingBox}
      * @memberof CoverageInfo
      */
     nativeBoundingBox?: CoverageInfoNativeBoundingBox;
     /**
-     * 
+     *
      * @type {CoverageInfoLatLonBoundingBox}
      * @memberof CoverageInfo
      */
@@ -110,7 +110,7 @@ export interface CoverageInfo {
      */
     metadata?: Array<MetadataEntry>;
     /**
-     * 
+     *
      * @type {CoverageInfoStore}
      * @memberof CoverageInfo
      */
@@ -134,7 +134,7 @@ export interface CoverageInfo {
      */
     numDecimals?: number;
     /**
-     * 
+     *
      * @type {CoverageInfoResponseSRS}
      * @memberof CoverageInfo
      */
@@ -152,7 +152,7 @@ export interface CoverageInfo {
      */
     skipNumberMatched?: boolean;
     /**
-     * 
+     *
      * @type {boolean}
      * @memberof CoverageInfo
      */
@@ -164,19 +164,19 @@ export interface CoverageInfo {
      */
     linearizationTolerance?: number;
     /**
-     * 
+     *
      * @type {CoverageInfoAttributes}
      * @memberof CoverageInfo
      */
     attributes?: CoverageInfoAttributes;
     /**
-     * 
+     *
      * @type {CoverageInfoDimensions}
      * @memberof CoverageInfo
      */
     dimensions?: CoverageInfoDimensions;
     /**
-     * 
+     *
      * @type {CoverageInfoGrid}
      * @memberof CoverageInfo
      */
@@ -252,7 +252,7 @@ export interface CoverageInfoDataLinks {
     metadataLink?: Array<CoverageInfoDataLinksMetadataLink>;
 }
 /**
- * 
+ *
  * @export
  * @interface CoverageInfoDataLinksMetadataLink
  */
@@ -277,7 +277,7 @@ export interface CoverageInfoDataLinksMetadataLink {
  */
 export interface CoverageInfoDimensions {
     /**
-     * 
+     *
      * @type {Array<CoverageInfoDimensionsCoverageDimension>}
      * @memberof CoverageInfoDimensions
      */
@@ -302,7 +302,7 @@ export interface CoverageInfoDimensionsCoverageDimension {
      */
     name?: string;
     /**
-     * 
+     *
      * @type {CoverageInfoDimensionsRange}
      * @memberof CoverageInfoDimensionsCoverageDimension
      */
@@ -346,19 +346,19 @@ export interface CoverageInfoGrid {
      */
     crs?: string;
     /**
-     * 
+     *
      * @type {CoverageInfoGridRange}
      * @memberof CoverageInfoGrid
      */
     range?: CoverageInfoGridRange;
     /**
-     * 
+     *
      * @type {CoverageInfoGridTransform}
      * @memberof CoverageInfoGrid
      */
     transform?: CoverageInfoGridTransform;
     /**
-     * 
+     *
      * @type {CoverageInfoGridInterpolationMethods}
      * @memberof CoverageInfoGrid
      */
@@ -371,7 +371,7 @@ export interface CoverageInfoGrid {
  */
 export interface CoverageInfoGridInterpolationMethods {
     /**
-     * 
+     *
      * @type {Array<string>}
      * @memberof CoverageInfoGridInterpolationMethods
      */
@@ -503,7 +503,7 @@ export interface CoverageInfoMetadatalinks {
     metadataLink?: Array<CoverageInfoMetadatalinksMetadataLink>;
 }
 /**
- * 
+ *
  * @export
  * @interface CoverageInfoMetadatalinksMetadataLink
  */
@@ -622,46 +622,46 @@ export interface CoverageInfoStore {
     href?: string;
 }
 /**
- * 
+ *
  * @export
  * @interface InlineResponse200
  */
 export interface InlineResponse200 {
     /**
-     * 
+     *
      * @type {InlineResponse200Coverages}
      * @memberof InlineResponse200
      */
     coverages?: InlineResponse200Coverages;
 }
 /**
- * 
+ *
  * @export
  * @interface InlineResponse2001
  */
 export interface InlineResponse2001 {
     /**
-     * 
+     *
      * @type {CoverageInfo}
      * @memberof InlineResponse2001
      */
     featureType?: CoverageInfo;
 }
 /**
- * 
+ *
  * @export
  * @interface InlineResponse200Coverages
  */
 export interface InlineResponse200Coverages {
     /**
-     * 
+     *
      * @type {Array<InlineResponse200CoveragesCoverage>}
      * @memberof InlineResponse200Coverages
      */
     coverage?: Array<InlineResponse200CoveragesCoverage>;
 }
 /**
- * 
+ *
  * @export
  * @interface InlineResponse200CoveragesCoverage
  */
@@ -680,7 +680,7 @@ export interface InlineResponse200CoveragesCoverage {
     link?: string;
 }
 /**
- * 
+ *
  * @export
  * @interface MetadataEntry
  */
@@ -737,7 +737,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -766,7 +766,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -818,7 +818,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -847,7 +847,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -893,7 +893,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -906,9 +906,9 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             };
         },
         /**
-         * Get the coverages available for the provided workspace. 
+         * Get the coverages available for the provided workspace.
          * @param {string} workspace The name of the workspace
-         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -933,7 +933,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -985,7 +985,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -998,10 +998,10 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             };
         },
         /**
-         * Get the coverages available for the provided workspace and data store. 
+         * Get the coverages available for the provided workspace and data store.
          * @param {string} workspace The name of the workspace
          * @param {string} store The name of the coverage data store
-         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1031,7 +1031,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -1060,7 +1060,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -1073,7 +1073,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             };
         },
         /**
-         * Create a new coverage, the coverage definition needs to reference a store. 
+         * Create a new coverage, the coverage definition needs to reference a store.
          * @param {string} workspace The name of the workspace
          * @param {CoverageInfo} coverage The body of the coverage to POST
          * @param {*} [options] Override http request option.
@@ -1100,7 +1100,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
@@ -1133,7 +1133,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -1146,7 +1146,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             };
         },
         /**
-         * Create a new coverage, the underlying data store must exist. 
+         * Create a new coverage, the underlying data store must exist.
          * @param {string} workspace The name of the workspace
          * @param {string} store The name of the coverage data store
          * @param {CoverageInfo} coverage The body of the coverage to POST
@@ -1179,7 +1179,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
@@ -1212,7 +1212,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -1241,7 +1241,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -1263,7 +1263,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putWorkspaceCoverage: async (workspace: string, store: string, coverage: string, coverage: CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options: any = {}): Promise<RequestArgs> => {
+        putWorkspaceCoverage: async (workspace: string, store: string, coverage: string | CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'workspace' is not null or undefined
             if (workspace === null || workspace === undefined) {
                 throw new RequiredError('workspace','Required parameter workspace was null or undefined when calling putWorkspaceCoverage.');
@@ -1298,7 +1298,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarHeaderParameter['Content-Type'] = 'application/xml';
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
@@ -1331,7 +1331,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -1420,9 +1420,9 @@ export const DefaultApiFp = function(configuration?: Configuration) {
             };
         },
         /**
-         * Get the coverages available for the provided workspace. 
+         * Get the coverages available for the provided workspace.
          * @param {string} workspace The name of the workspace
-         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1450,10 +1450,10 @@ export const DefaultApiFp = function(configuration?: Configuration) {
             };
         },
         /**
-         * Get the coverages available for the provided workspace and data store. 
+         * Get the coverages available for the provided workspace and data store.
          * @param {string} workspace The name of the workspace
          * @param {string} store The name of the coverage data store
-         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1477,7 +1477,7 @@ export const DefaultApiFp = function(configuration?: Configuration) {
             };
         },
         /**
-         * Create a new coverage, the coverage definition needs to reference a store. 
+         * Create a new coverage, the coverage definition needs to reference a store.
          * @param {string} workspace The name of the workspace
          * @param {CoverageInfo} coverage The body of the coverage to POST
          * @param {*} [options] Override http request option.
@@ -1503,7 +1503,7 @@ export const DefaultApiFp = function(configuration?: Configuration) {
             };
         },
         /**
-         * Create a new coverage, the underlying data store must exist. 
+         * Create a new coverage, the underlying data store must exist.
          * @param {string} workspace The name of the workspace
          * @param {string} store The name of the coverage data store
          * @param {CoverageInfo} coverage The body of the coverage to POST
@@ -1551,8 +1551,8 @@ export const DefaultApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async putWorkspaceCoverage(workspace: string, store: string, coverage: string, coverage: CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await DefaultApiAxiosParamCreator(configuration).putWorkspaceCoverage(workspace, store, coverage, coverage, calculate, options);
+        async putWorkspaceCoverage(workspace: string, store: string, coverage: string | CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await DefaultApiAxiosParamCreator(configuration).putWorkspaceCoverage(workspace, store, coverage, calculate, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
                 return axios.request(axiosRequestArgs);
@@ -1627,9 +1627,9 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
             return DefaultApiFp(configuration).getCoverage(workspace, coverage, quietOnNotFound, options).then((request) => request(axios, basePath));
         },
         /**
-         * Get the coverages available for the provided workspace. 
+         * Get the coverages available for the provided workspace.
          * @param {string} workspace The name of the workspace
-         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1649,10 +1649,10 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
             return DefaultApiFp(configuration).getWorkspaceCoverage(workspace, store, coverage, quietOnNotFound, options).then((request) => request(axios, basePath));
         },
         /**
-         * Get the coverages available for the provided workspace and data store. 
+         * Get the coverages available for the provided workspace and data store.
          * @param {string} workspace The name of the workspace
          * @param {string} store The name of the coverage data store
-         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+         * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1668,7 +1668,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
             return DefaultApiFp(configuration).postCoverage(options).then((request) => request(axios, basePath));
         },
         /**
-         * Create a new coverage, the coverage definition needs to reference a store. 
+         * Create a new coverage, the coverage definition needs to reference a store.
          * @param {string} workspace The name of the workspace
          * @param {CoverageInfo} coverage The body of the coverage to POST
          * @param {*} [options] Override http request option.
@@ -1686,7 +1686,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
             return DefaultApiFp(configuration).postWorkspaceCoverage(options).then((request) => request(axios, basePath));
         },
         /**
-         * Create a new coverage, the underlying data store must exist. 
+         * Create a new coverage, the underlying data store must exist.
          * @param {string} workspace The name of the workspace
          * @param {string} store The name of the coverage data store
          * @param {CoverageInfo} coverage The body of the coverage to POST
@@ -1722,8 +1722,8 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        putWorkspaceCoverage(workspace: string, store: string, coverage: string, coverage: CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any): AxiosPromise<void> {
-            return DefaultApiFp(configuration).putWorkspaceCoverage(workspace, store, coverage, coverage, calculate, options).then((request) => request(axios, basePath));
+        putWorkspaceCoverage(workspace: string, store: string, coverage: string | CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any): AxiosPromise<void> {
+            return DefaultApiFp(configuration).putWorkspaceCoverage(workspace, store, coverage, calculate, options).then((request) => request(axios, basePath));
         },
         /**
          * Invalid. Use POST for adding a new coverage, or PUT on an individual coverage to edit that type.
@@ -1790,9 +1790,9 @@ export interface DefaultApiInterface {
     getCoverage(workspace: string, coverage: string, quietOnNotFound?: boolean, options?: any): AxiosPromise<InlineResponse2001>;
 
     /**
-     * Get the coverages available for the provided workspace. 
+     * Get the coverages available for the provided workspace.
      * @param {string} workspace The name of the workspace
-     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
@@ -1812,10 +1812,10 @@ export interface DefaultApiInterface {
     getWorkspaceCoverage(workspace: string, store: string, coverage: string, quietOnNotFound?: boolean, options?: any): AxiosPromise<InlineResponse2001>;
 
     /**
-     * Get the coverages available for the provided workspace and data store. 
+     * Get the coverages available for the provided workspace and data store.
      * @param {string} workspace The name of the workspace
      * @param {string} store The name of the coverage data store
-     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
@@ -1831,7 +1831,7 @@ export interface DefaultApiInterface {
     postCoverage(options?: any): AxiosPromise<void>;
 
     /**
-     * Create a new coverage, the coverage definition needs to reference a store. 
+     * Create a new coverage, the coverage definition needs to reference a store.
      * @param {string} workspace The name of the workspace
      * @param {CoverageInfo} coverage The body of the coverage to POST
      * @param {*} [options] Override http request option.
@@ -1849,7 +1849,7 @@ export interface DefaultApiInterface {
     postWorkspaceCoverage(options?: any): AxiosPromise<void>;
 
     /**
-     * Create a new coverage, the underlying data store must exist. 
+     * Create a new coverage, the underlying data store must exist.
      * @param {string} workspace The name of the workspace
      * @param {string} store The name of the coverage data store
      * @param {CoverageInfo} coverage The body of the coverage to POST
@@ -1886,7 +1886,7 @@ export interface DefaultApiInterface {
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
      */
-    putWorkspaceCoverage(workspace: string, store: string, coverage: string, coverage: CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any): AxiosPromise<void>;
+    putWorkspaceCoverage(workspace: string, store: string, coverage: string | CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any): AxiosPromise<void>;
 
     /**
      * Invalid. Use POST for adding a new coverage, or PUT on an individual coverage to edit that type.
@@ -1963,9 +1963,9 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     }
 
     /**
-     * Get the coverages available for the provided workspace. 
+     * Get the coverages available for the provided workspace.
      * @param {string} workspace The name of the workspace
-     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApi
@@ -1989,10 +1989,10 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     }
 
     /**
-     * Get the coverages available for the provided workspace and data store. 
+     * Get the coverages available for the provided workspace and data store.
      * @param {string} workspace The name of the workspace
      * @param {string} store The name of the coverage data store
-     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned. 
+     * @param {'all'} [list] If the list parameter value is equal to \&quot;all\&quot; all the coverages available in the data source (even the non-published ones) will be returned.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApi
@@ -2012,7 +2012,7 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     }
 
     /**
-     * Create a new coverage, the coverage definition needs to reference a store. 
+     * Create a new coverage, the coverage definition needs to reference a store.
      * @param {string} workspace The name of the workspace
      * @param {CoverageInfo} coverage The body of the coverage to POST
      * @param {*} [options] Override http request option.
@@ -2034,7 +2034,7 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     }
 
     /**
-     * Create a new coverage, the underlying data store must exist. 
+     * Create a new coverage, the underlying data store must exist.
      * @param {string} workspace The name of the workspace
      * @param {string} store The name of the coverage data store
      * @param {CoverageInfo} coverage The body of the coverage to POST
@@ -2077,8 +2077,8 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
      * @throws {RequiredError}
      * @memberof DefaultApi
      */
-    public putWorkspaceCoverage(workspace: string, store: string, coverage: string, coverage: CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any) {
-        return DefaultApiFp(this.configuration).putWorkspaceCoverage(workspace, store, coverage, coverage, calculate, options).then((request) => request(this.axios, this.basePath));
+    public putWorkspaceCoverage(workspace: string, store: string, coverage: string | CoverageInfo, calculate?: Array<'nativebbox' | 'latlonbbox'>, options?: any) {
+        return DefaultApiFp(this.configuration).putWorkspaceCoverage(workspace, store, coverage, calculate, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

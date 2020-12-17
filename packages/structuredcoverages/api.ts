@@ -63,7 +63,7 @@ export interface Attribute {
     length?: number;
 }
 /**
- * 
+ *
  * @export
  * @interface Schema
  */
@@ -105,7 +105,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -124,11 +124,11 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
          * @param {string} coverage The name of the coverage to be retrieved
          * @param {string} granuleId The granule ID
          * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-         * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+         * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteStructuredCoverageGranule: async (workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: AnyType, options: any = {}): Promise<RequestArgs> => {
+        deleteStructuredCoverageGranule: async (workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: boolean, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'workspace' is not null or undefined
             if (workspace === null || workspace === undefined) {
                 throw new RequiredError('workspace','Required parameter workspace was null or undefined when calling deleteStructuredCoverageGranule.');
@@ -168,7 +168,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -187,11 +187,11 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
          * @param {string} coverage The name of the coverage to be retrieved
          * @param {string} [filter] A CQL filter to reduce the returned granules
          * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-         * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+         * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteStructuredCoverageGranules: async (workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: AnyType, options: any = {}): Promise<RequestArgs> => {
+        deleteStructuredCoverageGranules: async (workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: boolean, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'workspace' is not null or undefined
             if (workspace === null || workspace === undefined) {
                 throw new RequiredError('workspace','Required parameter workspace was null or undefined when calling deleteStructuredCoverageGranules.');
@@ -230,7 +230,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -284,7 +284,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -297,7 +297,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             };
         },
         /**
-         * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON 
+         * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON
          * @summary Get the attributes associated to the granules
          * @param {string} workspace The name of the worskpace containing the coverage stores.
          * @param {string} store The name of the store to be retrieved
@@ -347,7 +347,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -395,7 +395,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -424,7 +424,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -453,7 +453,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -482,7 +482,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -511,7 +511,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -540,7 +540,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -569,7 +569,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-    
+
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -609,11 +609,11 @@ export const DefaultApiFp = function(configuration?: Configuration) {
          * @param {string} coverage The name of the coverage to be retrieved
          * @param {string} granuleId The granule ID
          * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-         * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+         * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: AnyType, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await DefaultApiAxiosParamCreator(configuration).deleteStructuredCoverageGranule(workspace, store, coverage, granuleId, purge, updateBBox, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -627,11 +627,11 @@ export const DefaultApiFp = function(configuration?: Configuration) {
          * @param {string} coverage The name of the coverage to be retrieved
          * @param {string} [filter] A CQL filter to reduce the returned granules
          * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-         * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+         * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: AnyType, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await DefaultApiAxiosParamCreator(configuration).deleteStructuredCoverageGranules(workspace, store, coverage, filter, purge, updateBBox, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -656,7 +656,7 @@ export const DefaultApiFp = function(configuration?: Configuration) {
             };
         },
         /**
-         * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON 
+         * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON
          * @summary Get the attributes associated to the granules
          * @param {string} workspace The name of the worskpace containing the coverage stores.
          * @param {string} store The name of the store to be retrieved
@@ -786,11 +786,11 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
          * @param {string} coverage The name of the coverage to be retrieved
          * @param {string} granuleId The granule ID
          * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-         * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+         * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: AnyType, options?: any): AxiosPromise<void> {
+        deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: boolean, options?: any): AxiosPromise<void> {
             return DefaultApiFp(configuration).deleteStructuredCoverageGranule(workspace, store, coverage, granuleId, purge, updateBBox, options).then((request) => request(axios, basePath));
         },
         /**
@@ -800,11 +800,11 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
          * @param {string} coverage The name of the coverage to be retrieved
          * @param {string} [filter] A CQL filter to reduce the returned granules
          * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-         * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+         * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: AnyType, options?: any): AxiosPromise<void> {
+        deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: boolean, options?: any): AxiosPromise<void> {
             return DefaultApiFp(configuration).deleteStructuredCoverageGranules(workspace, store, coverage, filter, purge, updateBBox, options).then((request) => request(axios, basePath));
         },
         /**
@@ -821,7 +821,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
             return DefaultApiFp(configuration).getStructuredCoverageGranule(workspace, store, coverage, granuleId, options).then((request) => request(axios, basePath));
         },
         /**
-         * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON 
+         * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON
          * @summary Get the attributes associated to the granules
          * @param {string} workspace The name of the worskpace containing the coverage stores.
          * @param {string} store The name of the store to be retrieved
@@ -919,12 +919,12 @@ export interface DefaultApiInterface {
      * @param {string} coverage The name of the coverage to be retrieved
      * @param {string} granuleId The granule ID
      * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-     * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+     * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
      */
-    deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: AnyType, options?: any): AxiosPromise<void>;
+    deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: boolean, options?: any): AxiosPromise<void>;
 
     /**
      * Allows removing one or more granules from the index
@@ -933,12 +933,12 @@ export interface DefaultApiInterface {
      * @param {string} coverage The name of the coverage to be retrieved
      * @param {string} [filter] A CQL filter to reduce the returned granules
      * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-     * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+     * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
      */
-    deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: AnyType, options?: any): AxiosPromise<void>;
+    deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: boolean, options?: any): AxiosPromise<void>;
 
     /**
      * Displays a list of all the attributes associated to a particular coverage\'s granule. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON
@@ -954,7 +954,7 @@ export interface DefaultApiInterface {
     getStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, options?: any): AxiosPromise<void>;
 
     /**
-     * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON 
+     * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON
      * @summary Get the attributes associated to the granules
      * @param {string} workspace The name of the worskpace containing the coverage stores.
      * @param {string} store The name of the store to be retrieved
@@ -1054,12 +1054,12 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
      * @param {string} coverage The name of the coverage to be retrieved
      * @param {string} granuleId The granule ID
      * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-     * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+     * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApi
      */
-    public deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: AnyType, options?: any) {
+    public deleteStructuredCoverageGranule(workspace: string, store: string, coverage: string, granuleId: string, purge?: string, updateBBox?: boolean, options?: any) {
         return DefaultApiFp(this.configuration).deleteStructuredCoverageGranule(workspace, store, coverage, granuleId, purge, updateBBox, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1070,12 +1070,12 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
      * @param {string} coverage The name of the coverage to be retrieved
      * @param {string} [filter] A CQL filter to reduce the returned granules
      * @param {string} [purge] The purge parameter specifies if and how the underlying raster data source is deleted. Allowable values for this parameter are \&quot;none\&quot;, \&quot;metadata\&quot; and \&quot;all\&quot;. When set to \&quot;none\&quot; data and auxiliary files are preserved, only the registration in the mosaic is removed When set to \&quot;metadata\&quot; delete only auxiliary files and metadata (e.g. NetCDF sidecar indexes). It’s recommended when data files (such as granules) should not be deleted from disk. Finally, when set to \&quot;all\&quot; both data and auxiliary files are removed.
-     * @param {AnyType} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
+     * @param {boolean} [updateBBox] When set to \&quot;true\&quot;, triggers re-calculation of the layer native bbox. Defaults to \&quot;false\&quot;.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApi
      */
-    public deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: AnyType, options?: any) {
+    public deleteStructuredCoverageGranules(workspace: string, store: string, coverage: string, filter?: string, purge?: string, updateBBox?: boolean, options?: any) {
         return DefaultApiFp(this.configuration).deleteStructuredCoverageGranules(workspace, store, coverage, filter, purge, updateBBox, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1095,7 +1095,7 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     }
 
     /**
-     * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON 
+     * Displays a list of all the attributes associated to a particular coverage\'s granules. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/index.xml\" for XML). Defaults to XML representation. The XML output is actually WFS 1.0 GML, while the JSON output is GeoJSON
      * @summary Get the attributes associated to the granules
      * @param {string} workspace The name of the worskpace containing the coverage stores.
      * @param {string} store The name of the store to be retrieved
