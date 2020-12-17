@@ -26,7 +26,7 @@ then the package may be consumed as follows:
 import {DefaultApi as WsApi} from 'geoserver-client-worksapces'
 
 const wsApi = new WsApi({basePath: "http://<geoserver-path>/geoserver/rest"})
-const ws = await geoApis.wsApi.getWorkspaces()
+const ws = await wsApi.getWorkspaces()
 ws.data.workspaces.workspace[0]
 ```
 
