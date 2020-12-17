@@ -1,14 +1,14 @@
 {
-  "name": "reload",
+  "name": "geoserver-client-reload",
   "version": "1.0.0",
-  "description": "OpenAPI client for reload",
+  "description": "OpenAPI client for geoserver-client-reload",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
     "axios",
     "typescript",
     "openapi-client",
     "openapi-generator",
-    "reload"
+    "geoserver-client-reload"
   ],
   "license": "Unlicense",
   "main": "./dist/index.js",
@@ -18,10 +18,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "node": "^15.4.0",
-    "typescript": "^4.1.3",
-    "url": "^0.11.0"
+    "axios": "^0.19.2"
   },
   "devDependencies": {
     "@types/node": "^12.11.5",

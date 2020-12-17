@@ -12,7 +12,6 @@
  */
 
 
-//@ts-ignore
 import * as globalImportUrl from 'url';
 import { Configuration } from './configuration';
 import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
@@ -21,7 +20,7 @@ import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
 import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from './base';
 
 /**
- *
+ * 
  * @export
  * @interface AuthorityURL
  */
@@ -40,7 +39,7 @@ export interface AuthorityURL {
     href?: string;
 }
 /**
- *
+ * 
  * @export
  * @interface Identifier
  */
@@ -59,7 +58,7 @@ export interface Identifier {
     identifier?: string;
 }
 /**
- *
+ * 
  * @export
  * @interface Layer
  */
@@ -83,19 +82,19 @@ export interface Layer {
      */
     type?: LayerTypeEnum;
     /**
-     *
+     * 
      * @type {StyleReference}
      * @memberof Layer
      */
     defaultStyle?: StyleReference;
     /**
-     *
+     * 
      * @type {LayerStyles}
      * @memberof Layer
      */
     styles?: LayerStyles;
     /**
-     *
+     * 
      * @type {LayerResource}
      * @memberof Layer
      */
@@ -107,25 +106,25 @@ export interface Layer {
      */
     opaque?: boolean;
     /**
-     *
+     * 
      * @type {Array<MetadataEntry>}
      * @memberof Layer
      */
     metadata?: Array<MetadataEntry>;
     /**
-     *
+     * 
      * @type {LayerAttribution}
      * @memberof Layer
      */
     attribution?: LayerAttribution;
     /**
-     *
+     * 
      * @type {Array<AuthorityURL>}
      * @memberof Layer
      */
     authorityURLs?: Array<AuthorityURL>;
     /**
-     *
+     * 
      * @type {Array<Identifier>}
      * @memberof Layer
      */
@@ -188,7 +187,7 @@ export interface LayerAttribution {
     logoType?: string;
 }
 /**
- *
+ * 
  * @export
  * @interface LayerReference
  */
@@ -253,7 +252,7 @@ export interface LayerStyles {
      */
     _class?: LayerStylesClassEnum;
     /**
-     *
+     * 
      * @type {Array<StyleReference>}
      * @memberof LayerStyles
      */
@@ -269,20 +268,20 @@ export enum LayerStylesClassEnum {
 }
 
 /**
- *
+ * 
  * @export
  * @interface Layers
  */
 export interface Layers {
     /**
-     *
+     * 
      * @type {LayerReference}
      * @memberof Layers
      */
     layers?: LayerReference;
 }
 /**
- *
+ * 
  * @export
  * @interface MetadataEntry
  */
@@ -352,7 +351,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -382,7 +381,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -423,7 +422,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -459,7 +458,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -488,7 +487,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -529,7 +528,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarHeaderParameter['Content-Type'] = 'application/xml';
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
@@ -548,13 +547,13 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * Deletes a layer from the server.
          * @summary Delete layer
-         * @param {string} workspaceName The name of the workspace the layer is in.
+         * @param {AnyType} workspaceName The name of the workspace the layer is in.
          * @param {string} layerName The name of the layer to delete.
          * @param {boolean} [recurse] Recursively removes the layer from all layer groups which reference it. If this results in an empty layer group, also delete the layer group. Allowed values for this parameter are true or false. The default value is false. A request with \&#39;recurse&#x3D;false\&#39; will fail if any layer groups reference the layer.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        layersNameWorkspaceDelete: async (workspaceName: string, layerName: string, recurse?: boolean, options: any = {}): Promise<RequestArgs> => {
+        layersNameWorkspaceDelete: async (workspaceName: AnyType, layerName: string, recurse?: boolean, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'workspaceName' is not null or undefined
             if (workspaceName === null || workspaceName === undefined) {
                 throw new RequiredError('workspaceName','Required parameter workspaceName was null or undefined when calling layersNameWorkspaceDelete.');
@@ -580,7 +579,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             }
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -622,7 +621,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -651,7 +650,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -666,13 +665,13 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * Modifies an existing layer on the server. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/layers/{layer}.xml\" for XML).
          * @summary Modify a layer.
-         * @param {string} workspaceName The name of the workspace the layer is in.
+         * @param {AnyType} workspaceName The name of the workspace the layer is in.
          * @param {string} layerName The name of the layer to modify.
          * @param {Layer} layerBody The updated layer definition.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        layersNameWorkspacePut: async (workspaceName: string, layerName: string, layerBody: Layer, options: any = {}): Promise<RequestArgs> => {
+        layersNameWorkspacePut: async (workspaceName: AnyType, layerName: string, layerBody: Layer, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'workspaceName' is not null or undefined
             if (workspaceName === null || workspaceName === undefined) {
                 throw new RequiredError('workspaceName','Required parameter workspaceName was null or undefined when calling layersNameWorkspacePut.');
@@ -698,7 +697,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarHeaderParameter['Content-Type'] = 'application/xml';
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
@@ -731,7 +730,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -760,7 +759,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -789,7 +788,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -825,7 +824,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -854,7 +853,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -883,7 +882,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
             const localVarQueryParameter = {} as any;
 
 
-
+    
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
@@ -988,13 +987,13 @@ export const DefaultApiFp = function(configuration?: Configuration) {
         /**
          * Deletes a layer from the server.
          * @summary Delete layer
-         * @param {string} workspaceName The name of the workspace the layer is in.
+         * @param {AnyType} workspaceName The name of the workspace the layer is in.
          * @param {string} layerName The name of the layer to delete.
          * @param {boolean} [recurse] Recursively removes the layer from all layer groups which reference it. If this results in an empty layer group, also delete the layer group. Allowed values for this parameter are true or false. The default value is false. A request with \&#39;recurse&#x3D;false\&#39; will fail if any layer groups reference the layer.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async layersNameWorkspaceDelete(workspaceName: string, layerName: string, recurse?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async layersNameWorkspaceDelete(workspaceName: AnyType, layerName: string, recurse?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await DefaultApiAxiosParamCreator(configuration).layersNameWorkspaceDelete(workspaceName, layerName, recurse, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -1031,13 +1030,13 @@ export const DefaultApiFp = function(configuration?: Configuration) {
         /**
          * Modifies an existing layer on the server. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/layers/{layer}.xml\" for XML).
          * @summary Modify a layer.
-         * @param {string} workspaceName The name of the workspace the layer is in.
+         * @param {AnyType} workspaceName The name of the workspace the layer is in.
          * @param {string} layerName The name of the layer to modify.
          * @param {Layer} layerBody The updated layer definition.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async layersNameWorkspacePut(workspaceName: string, layerName: string, layerBody: Layer, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async layersNameWorkspacePut(workspaceName: AnyType, layerName: string, layerBody: Layer, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await DefaultApiAxiosParamCreator(configuration).layersNameWorkspacePut(workspaceName, layerName, layerBody, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -1187,13 +1186,13 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
         /**
          * Deletes a layer from the server.
          * @summary Delete layer
-         * @param {string} workspaceName The name of the workspace the layer is in.
+         * @param {AnyType} workspaceName The name of the workspace the layer is in.
          * @param {string} layerName The name of the layer to delete.
          * @param {boolean} [recurse] Recursively removes the layer from all layer groups which reference it. If this results in an empty layer group, also delete the layer group. Allowed values for this parameter are true or false. The default value is false. A request with \&#39;recurse&#x3D;false\&#39; will fail if any layer groups reference the layer.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        layersNameWorkspaceDelete(workspaceName: string, layerName: string, recurse?: boolean, options?: any): AxiosPromise<void> {
+        layersNameWorkspaceDelete(workspaceName: AnyType, layerName: string, recurse?: boolean, options?: any): AxiosPromise<void> {
             return DefaultApiFp(configuration).layersNameWorkspaceDelete(workspaceName, layerName, recurse, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1218,13 +1217,13 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
         /**
          * Modifies an existing layer on the server. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/layers/{layer}.xml\" for XML).
          * @summary Modify a layer.
-         * @param {string} workspaceName The name of the workspace the layer is in.
+         * @param {AnyType} workspaceName The name of the workspace the layer is in.
          * @param {string} layerName The name of the layer to modify.
          * @param {Layer} layerBody The updated layer definition.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        layersNameWorkspacePut(workspaceName: string, layerName: string, layerBody: Layer, options?: any): AxiosPromise<void> {
+        layersNameWorkspacePut(workspaceName: AnyType, layerName: string, layerBody: Layer, options?: any): AxiosPromise<void> {
             return DefaultApiFp(configuration).layersNameWorkspacePut(workspaceName, layerName, layerBody, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1346,14 +1345,14 @@ export interface DefaultApiInterface {
     /**
      * Deletes a layer from the server.
      * @summary Delete layer
-     * @param {string} workspaceName The name of the workspace the layer is in.
+     * @param {AnyType} workspaceName The name of the workspace the layer is in.
      * @param {string} layerName The name of the layer to delete.
      * @param {boolean} [recurse] Recursively removes the layer from all layer groups which reference it. If this results in an empty layer group, also delete the layer group. Allowed values for this parameter are true or false. The default value is false. A request with \&#39;recurse&#x3D;false\&#39; will fail if any layer groups reference the layer.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
      */
-    layersNameWorkspaceDelete(workspaceName: string, layerName: string, recurse?: boolean, options?: any): AxiosPromise<void>;
+    layersNameWorkspaceDelete(workspaceName: AnyType, layerName: string, recurse?: boolean, options?: any): AxiosPromise<void>;
 
     /**
      * Retrieves a single layer definition. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/layers/{layer}.xml\" for XML).
@@ -1377,14 +1376,14 @@ export interface DefaultApiInterface {
     /**
      * Modifies an existing layer on the server. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/layers/{layer}.xml\" for XML).
      * @summary Modify a layer.
-     * @param {string} workspaceName The name of the workspace the layer is in.
+     * @param {AnyType} workspaceName The name of the workspace the layer is in.
      * @param {string} layerName The name of the layer to modify.
      * @param {Layer} layerBody The updated layer definition.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApiInterface
      */
-    layersNameWorkspacePut(workspaceName: string, layerName: string, layerBody: Layer, options?: any): AxiosPromise<void>;
+    layersNameWorkspacePut(workspaceName: AnyType, layerName: string, layerBody: Layer, options?: any): AxiosPromise<void>;
 
     /**
      * Invalid. To create a new layer, instead POST to one of `/workspaces/{workspaceName}/coveragestores/{coveragestoreName}/coverages`, `/workspaces/{workspaceName}/datastores/{datastoreName}/featuretypes`, `/workspaces/{workspaceName}/wmsstores/{wmsstoreName}/wmslayers`, or `/workspaces/{workspaceName}/wmtsstores/{wmststoreName}/wmtslayers`
@@ -1517,14 +1516,14 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     /**
      * Deletes a layer from the server.
      * @summary Delete layer
-     * @param {string} workspaceName The name of the workspace the layer is in.
+     * @param {AnyType} workspaceName The name of the workspace the layer is in.
      * @param {string} layerName The name of the layer to delete.
      * @param {boolean} [recurse] Recursively removes the layer from all layer groups which reference it. If this results in an empty layer group, also delete the layer group. Allowed values for this parameter are true or false. The default value is false. A request with \&#39;recurse&#x3D;false\&#39; will fail if any layer groups reference the layer.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApi
      */
-    public layersNameWorkspaceDelete(workspaceName: string, layerName: string, recurse?: boolean, options?: any) {
+    public layersNameWorkspaceDelete(workspaceName: AnyType, layerName: string, recurse?: boolean, options?: any) {
         return DefaultApiFp(this.configuration).layersNameWorkspaceDelete(workspaceName, layerName, recurse, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1554,14 +1553,14 @@ export class DefaultApi extends BaseAPI implements DefaultApiInterface {
     /**
      * Modifies an existing layer on the server. Use the \"Accept:\" header to specify format or append an extension to the endpoint (example \"/layers/{layer}.xml\" for XML).
      * @summary Modify a layer.
-     * @param {string} workspaceName The name of the workspace the layer is in.
+     * @param {AnyType} workspaceName The name of the workspace the layer is in.
      * @param {string} layerName The name of the layer to modify.
      * @param {Layer} layerBody The updated layer definition.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DefaultApi
      */
-    public layersNameWorkspacePut(workspaceName: string, layerName: string, layerBody: Layer, options?: any) {
+    public layersNameWorkspacePut(workspaceName: AnyType, layerName: string, layerBody: Layer, options?: any) {
         return DefaultApiFp(this.configuration).layersNameWorkspacePut(workspaceName, layerName, layerBody, options).then((request) => request(this.axios, this.basePath));
     }
 

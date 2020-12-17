@@ -10,7 +10,7 @@
         "glob": "./doc/1.0.0/*.{json,yaml}",
         "skipValidateSpec": true,
         "additionalProperties": {
-          "npmName": "#{name}",
+          "npmName": "geoserver-client-#{name}",
           "supportsES6": "true",
           "withInterfaces": true
         }

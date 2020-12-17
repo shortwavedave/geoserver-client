@@ -1,14 +1,14 @@
 {
-  "name": "metadata",
+  "name": "geoserver-client-metadata",
   "version": "1.0.0",
-  "description": "OpenAPI client for metadata",
+  "description": "OpenAPI client for geoserver-client-metadata",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
     "axios",
     "typescript",
     "openapi-client",
     "openapi-generator",
-    "metadata"
+    "geoserver-client-metadata"
   ],
   "license": "Unlicense",
   "main": "./dist/index.js",
@@ -18,10 +18,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "node": "^15.4.0",
-    "typescript": "^4.1.3",
-    "url": "^0.11.0"
+    "axios": "^0.19.2"
   },
   "devDependencies": {
     "@types/node": "^12.11.5",
