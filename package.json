@@ -1,0 +1,13 @@
+{
+  "name": "geoserver-client",
+  "version": "1.0.0",
+  "author": "David Sacharny <david.sacharny@georq.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build"
+  }
+}
