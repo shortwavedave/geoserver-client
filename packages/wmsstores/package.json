@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-wmsstores",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OpenAPI client for geoserver-client-wmsstores",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

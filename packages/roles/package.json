@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-roles",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OpenAPI client for geoserver-client-roles",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-structuredcoverages",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OpenAPI client for geoserver-client-structuredcoverages",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
