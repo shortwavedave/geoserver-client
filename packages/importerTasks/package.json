@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-importer-tasks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "OpenAPI client for geoserver-client-importerTasks",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

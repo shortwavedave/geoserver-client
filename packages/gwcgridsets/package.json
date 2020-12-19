@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-gwcgridsets",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "OpenAPI client for geoserver-client-gwcgridsets",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [

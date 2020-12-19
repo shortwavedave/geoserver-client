@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-system-status",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "OpenAPI client for geoserver-client-system-status",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
