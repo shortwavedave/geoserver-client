@@ -23,7 +23,7 @@ NPM packages exist for each api, shown below. Packages can be installed by runni
 then the package may be consumed as follows:
 
 ```
-import {DefaultApi as WsApi} from 'geoserver-client-worksapces'
+import {DefaultApi as WsApi} from 'geoserver-client-workspaces/dist'
 
 const wsApi = new WsApi({basePath: "http://<geoserver-path>/geoserver/rest"})
 const ws = await wsApi.getWorkspaces()
