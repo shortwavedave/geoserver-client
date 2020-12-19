@@ -1,6 +1,6 @@
 {
   "name": "geoserver-client-layers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "OpenAPI client for geoserver-client-layers",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
@@ -13,7 +13,9 @@
   "license": "Unlicense",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc --outDir dist/",
     "prepublishOnly": "npm run build"
