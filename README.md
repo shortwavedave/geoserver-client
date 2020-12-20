@@ -13,7 +13,7 @@ Compiled from openapi specs: https://github.com/geoserver/geoserver/tree/master/
 ### Generate the api
 `openapi-generator-cli generate`
 ### Fix types
-Some of the types that are produced are not correct. Try to build the project to find the errors
+Some of the types that are produced are not correct, run `yarn build` to find the errors
 
 ## Packages
 NPM packages exist for each api, shown below. Packages can be installed by running, for example:
