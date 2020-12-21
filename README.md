@@ -67,11 +67,11 @@ List of Packages (via `lerna list`):
   geoserver-client-gwcseed
 - [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importer.yaml):
   geoserver-client-importer
-- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importer-data.yaml):
+- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importerData.yaml):
   geoserver-client-importer-data
-- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importer-tasks.yaml):
+- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importerTasks.yaml):
   geoserver-client-importer-tasks
-- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importer-transforms.yaml):
+- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/importerTransforms.yaml):
   geoserver-client-importer-transforms
 - [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/layergroups.yaml):
   geoserver-client-layergroups
@@ -105,7 +105,7 @@ List of Packages (via `lerna list`):
   geoserver-client-structuredcoverages
 - [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/styles.yaml):
   geoserver-client-styles
-- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/system-status.yaml):
+- [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/systemStatus.yaml):
   geoserver-client-system-status
 - [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/shortwavedave/geoserver-client/main/doc/1.0.0/templates.yaml):
   geoserver-client-templates
